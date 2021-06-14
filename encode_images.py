@@ -36,7 +36,7 @@ def main():
     parser.add_argument('--mask_dir', default='masks', help='Directory for storing optional masks')
     parser.add_argument('--load_last', default='', help='Start with embeddings from directory')
     parser.add_argument('--dlatent_avg', default='', help='Use dlatent from file specified here for truncation instead of dlatent_avg from Gs')
-    parser.add_argument('--model_url', default='https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/metfaces.pkl', help='Fetch a StyleGAN model to train on from this URL')
+    parser.add_argument('--model_url', default='https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/ffhq.pkl', help='Fetch a StyleGAN model to train on from this URL')
     parser.add_argument('--model_res', default=1024, help='The dimension of images in the StyleGAN model', type=int)
     parser.add_argument('--batch_size', default=1, help='Batch size for generator and perceptual model', type=int)
     parser.add_argument('--optimizer', default='ggt', help='Optimization algorithm used for optimizing dlatents')
